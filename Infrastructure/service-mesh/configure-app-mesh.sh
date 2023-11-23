@@ -7,7 +7,7 @@ account_id=$(aws sts get-caller-identity --query "Account" --output text | xargs
 appmesh_controller_policy_arn="arn:aws:iam::${account_id}:policy/AppMeshControllerPolicy"
 
 export CLUSTER_NAME=eks-acg
-export AWS_REGION=us-east-1
+export AWS_REGION=ap-southeast-2
 
 eksctl create iamserviceaccount \
     --cluster eks-acg \

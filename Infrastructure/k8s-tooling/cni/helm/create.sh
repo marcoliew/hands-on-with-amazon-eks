@@ -5,7 +5,7 @@ subnet_c=`aws cloudformation describe-stack-resources --stack-name secondary-sub
 sg1=`aws eks describe-cluster --name eks-acg --query "cluster.resourcesVpcConfig.securityGroupIds[0]" --output text`
 sg2=`aws eks describe-cluster --name eks-acg --query "cluster.resourcesVpcConfig.clusterSecurityGroupId" --output text`
 
-region='us-east-1'
+region='ap-southeast-2'
 
 az1="${region}a"
 az2="${region}b"

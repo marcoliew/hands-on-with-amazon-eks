@@ -6,7 +6,7 @@ replicaCount: 1
 baseDomain: sample.com
 
 aws:
-  region: us-east-1
+  region: ap-southeast-2
   accountId: 12345678909
 
 image:

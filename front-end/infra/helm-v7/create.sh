@@ -6,7 +6,7 @@ if [ -z "$environment" ]; then
     environment='development'
 fi
 
-base_domain=$(aws route53 list-hosted-zones --query "HostedZones[0].Name" --output text | rev | cut -c2- | rev)
+base_domain="ekstest.sydney.edu.au"
 account_id=$(aws sts get-caller-identity --query "Account" --output text | xargs)
 region=${AWS_REGION}
 

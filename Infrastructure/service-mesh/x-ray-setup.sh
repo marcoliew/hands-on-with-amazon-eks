@@ -1,4 +1,4 @@
-export AWS_REGION=us-east-1
+export AWS_REGION=ap-southeast-2
 
 helm upgrade -i appmesh-controller eks/appmesh-controller \
     --namespace appmesh-system \
