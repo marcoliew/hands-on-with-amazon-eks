@@ -1,4 +1,4 @@
-./scripts-by-chapter/chapter-1.sh
+# ./scripts-by-chapter/chapter-1.sh
 
 echo "***************************************************"
 echo "********* CHAPTER 2 - STARTED AT $(date) **********"
@@ -14,7 +14,7 @@ echo "--- This could take around 10 minutes"
     aws iam attach-role-policy --role-name ${nodegroup_iam_role} --policy-arn ${aws_lb_controller_policy}
 
 # Create SSL Certfiicate in ACM
-    ( cd ./Infrastructure/cloudformation/ssl-certificate && ./create.sh )
+#    ( cd ./Infrastructure/cloudformation/ssl-certificate && ./create.sh )
 
 # Installing ExternalDNS
     ./Infrastructure/k8s-tooling/external-dns/create.sh
